@@ -1,0 +1,38 @@
+.goj-data-list {
+    width: 100%;
+}
+
+.goj-data-list__row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    border-bottom: 1px solid goj-color("light-border");
+}
+
+.goj-data-list__key {
+    font-weight: bold;
+    margin: 0;
+    width: 50%;
+    text-align: left;
+}
+
+.goj-data-list__value {
+    margin: 0;
+    width: 50%;
+}
+
+@media screen and (max-width: $goj-breakpoint-md) {
+    .goj-data-list__row {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .goj-data-list__key {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .goj-data-list__value {
+        width: 100%;
+    }
+}

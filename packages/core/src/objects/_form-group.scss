@@ -1,0 +1,15 @@
+.goj-form-group {
+    position: relative;
+}
+
+.goj-form-group--error {
+    border-left: 4px solid goj-color("light-red");
+    padding-left: 10px;
+}
+
+.goj-form-group__error-message {
+    color: goj-color("light-red");
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 5px;
+}

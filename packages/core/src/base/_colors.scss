@@ -1,0 +1,28 @@
+@use "sass:map";
+
+$goj-colors: (
+    "red": #b60011,
+    "light-red": #df022d,
+    "green": #009429,
+    "blue": #0048AF,
+    "white": #FFFFFF,
+    "black": #000000,
+    "muted": #505a5f,
+    "light-gray": #f3f2f1,
+    "dark-gray": #696969,
+    "charcoal": #1d1d1b,
+    "input-border": #545454,
+    "light-border": #b1b4b6,
+    "orange": #d17505,
+    "focus": rgb(245, 229, 0)
+);
+
+@function goj-color($name) {
+    @return map.get($goj-colors, $name);
+}
+
+:root {
+    @each $name, $value in $goj-colors {
+        --goj-color-#{$name}: #{$value};
+    }
+}

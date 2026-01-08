@@ -1,0 +1,71 @@
+.goj-checkboxes {
+    
+}
+
+.goj-checkboxes--large {
+    .goj-checkboxes__input {
+        height: 35px;
+        width: 35px;
+
+        &:before {
+            font-size: 22px;
+        }
+    }
+}
+
+.goj-checkboxes__item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.goj-checkboxes__input {
+    appearance: none;
+    background-color: goj-color("white");
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    border: 2.5px solid goj-color("charcoal");
+    transform: translateY(-1.2px);
+    display: grid;
+    place-content: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:before {
+        content: "";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0);
+        transform-origin: bottom left;
+        transition: 100ms transform ease-in-out;
+        box-shadow: inset 16px 16px var(--form-control-color);
+    }
+
+    &:checked::before {
+        content: "\f00c";
+        font-family: FontAwesome;
+        transform: scale(1);
+    }
+
+    &:focus {
+        outline: 2.5px solid goj-color("focus");
+    }
+
+    &:disabled {
+        color: goj-color("dark-gray");
+        cursor: not-allowed;
+    }
+}
+
+.goj-checkboxes__label {
+    align-self: center;
+    margin-left: 6px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

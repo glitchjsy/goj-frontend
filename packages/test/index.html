@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="/GovJE.min.css">
+
+    <style>
+        .title,
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .subtitle {
+            margin-bottom: 10px;
+            margin-top: 20px !important;
+            font-weight: bold;
+            background-color: rgb(128, 0, 128, 0.1);
+            color: purple;
+            padding: 2px 10px;
+            max-width: 800px;
+        }
+
+        .title:not(:first-child) {
+            margin-top: 40px;
+            border-top: 1px solid black;
+            padding-top: 20px;
+        }
+
+        .inverse {
+            background-color: var(--goj-color-red);
+            padding: 15px;
+            width: fit-content;
+        }
+
+        .inverse-blue {
+            background-color: var(--goj-color-blue);
+        }
+
+        .lovejersey a:hover {
+            border-color: #2B837C !important;
+            color: #2B837C !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Side Panel</h1>
+    <p class="subtitle">Links</p>
+    <div style="max-width:300px">
+        <div class="goj-side-panel">
+            <h3 class="goj-side-panel__title">Related links</h3>
+            <div class="goj-side-panel__links">
+                <a href="/" class="goj-link goj-link--charcoal">Update your vehicle details</a>
+                <a href="/" class="goj-link goj-link--charcoal">Register a trailer</a>
+                <a href="/" class="goj-link goj-link--charcoal">Pay a parking fine</a>
+            </div>
+        </div>
+    </div>
+
+    <p class="subtitle">Contact</p>
+    <div style="max-width:300px">
+        <div class="goj-sidebar">
+            <div class="goj-side-panel">
+                <h3 class="goj-side-panel__title">Related links</h3>
+                <div class="goj-side-panel__links">
+                    <a href="/" class="goj-link goj-link--charcoal">Update your vehicle details</a>
+                    <a href="/" class="goj-link goj-link--charcoal">Register a trailer</a>
+                    <a href="/" class="goj-link goj-link--charcoal">Pay a parking fine</a>
+                </div>
+            </div>
+            <div class="goj-side-panel">
+                <h3 class="goj-side-panel__title">Contact</h3>
+                <div class="goj-side-panel__links">
+                    <div class="goj-side-panel__contact-item">
+                        Driver & Vehicle Standards
+                    </div>
+                    <div class="goj-side-panel__contact-item">
+                        <div class="goj-side-panel__contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a class="goj-link goj-link--charcoal" href="tel:01534448600">01534 448600</a>
+                        </div>
+                        <div class="goj-side-panel__contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a class="goj-link goj-link--charcoal" href="mailto:dvsinfo@gov.je">dvsinfo@gov.je</a>
+                        </div>
+                    </div>
+                    <div class="goj-side-panel__contact-item">
+                        Monday to Friday 8.30am to 4pm
+                    </div>
+                    <div class="goj-side-panel__contact-item">
+                        Driver and Vehicle Standards<br />
+                        La Route De Veulle<br />
+                        La Collette<br />
+                        St Helier<br />
+                        Jersey<br />
+                        JE1 3UE
+                    </div>
+                    <div class="goj-side-panel__contact-item">
+                        <button class="goj-button goj-button--primary goj-button--slim">Connect to SignVideo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="title">Grid</h1>
+    <p class="subtitle">Sidebar</p>
+    <div class="goj-row">
+        <div class="goj-col goj-col--full goj-col--md-two-thirds" style="background:red">
+            Main Content
+        </div>
+        <div class="goj-col goj-col--full goj-col--md-one-third" style="background:green">
+            Sidebar
+        </div>
+    </div>
+
+    <h1 class="title">Panel</h1>
+    <div style="max-width:800px">
+        <div class="goj-panel">
+            <div class="goj-panel__title">​We’re experiencing issues with our live data </div>
+            <div class="goj-panel__content">
+                <p class="goj-p">Due to maintenance at our car parks our space counters are not updating, availability
+                    of car parking spaces may differ upon arrival. ​</p>
+            </div>
+        </div>
+
+        <p class="subtitle">.</p>
+        <br />
+
+        <div class="goj-panel goj-panel--success">
+            <div class="goj-panel__title">​We’re experiencing issues with our live data </div>
+            <div class="goj-panel__content">
+                <p class="goj-p">Due to maintenance at our car parks our space counters are not updating, availability
+                    of car parking spaces may differ upon arrival. ​</p>
+            </div>
+        </div>
+
+        <p class="subtitle">.</p>
+        <br />
+
+        <div class="goj-panel goj-panel--charcoal">
+            <div class="goj-panel__title">​We’re experiencing issues with our live data </div>
+            <div class="goj-panel__content">
+                <p class="goj-p">Due to maintenance at our car parks our space counters are not updating, availability
+                    of car parking spaces may differ upon arrival. ​</p>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="title">Table</h1>
+    <div style="max-width:1000px">
+        <table class="goj-table">
+            <thead class="goj-table__header">
+                <tr class="goj-table__row">
+                    <th class="goj-table__header-cell">Name</th>
+                    <th class="goj-table__header-cell">Age</th>
+                    <th class="goj-table__header-cell">Occupation</th>
+                </tr>
+            </thead>
+            <tbody class="goj-table__body">
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell">John Doe</td>
+                    <td class="goj-table__cell goj-table--numeric">30</td>
+                    <td class="goj-table__cell">Software Engineer</td>
+                </tr>
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell">Jane Smith</td>
+                    <td class="goj-table__cell goj-table--numeric">25</td>
+                    <td class="goj-table__cell">Graphic Designer</td>
+                </tr>
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell">Sam Johnson</td>
+                    <td class="goj-table__cell goj-table--numeric">40</td>
+                    <td class="goj-table__cell">Project Manager</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="subtitle">Gray first column</p>
+        <table class="goj-table">
+            <thead class="goj-table__header">
+                <tr class="goj-table__row">
+                    <th class="goj-table__header-cell">Name</th>
+                    <th class="goj-table__header-cell">Age</th>
+                    <th class="goj-table__header-cell">Occupation</th>
+                </tr>
+            </thead>
+            <tbody class="goj-table__body">
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell goj-table__first-row">John Doe</td>
+                    <td class="goj-table__cell goj-table--numeric">30</td>
+                    <td class="goj-table__cell">Software Engineer</td>
+                </tr>
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell goj-table__first-row">Jane Smith</td>
+                    <td class="goj-table__cell goj-table--numeric">25</td>
+                    <td class="goj-table__cell">Graphic Designer</td>
+                </tr>
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell goj-table__first-row">Sam Johnson</td>
+                    <td class="goj-table__cell goj-table--numeric">40</td>
+                    <td class="goj-table__cell">Project Manager</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="subtitle">Example with gray first column again</p>
+        <table class="goj-table">
+            <thead class="goj-table__header">
+                <tr class="goj-table__row">
+                    <th class="goj-table__header-cell goj-table--equal-width">Payment period​</th>
+                    <th class="goj-table__header-cell goj-table--equal-width">Threshold</th>
+                </tr>
+            </thead>
+            <tbody class="goj-table__body">
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell goj-table__first-row">Paid weekly</td>
+                    <td class="goj-table__cell">£128</td>
+                </tr>
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell goj-table__first-row">Paid every 2 weeks</td>
+                    <td class="goj-table__cell">£256</td>
+                </tr>
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell goj-table__first-row">Paid every 4 weeks</td>
+                    <td class="goj-table__cell">£512</td>
+                </tr>
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell goj-table__first-row">Paid monthly</td>
+                    <td class="goj-table__cell">£556</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="subtitle">No header row</p>
+        <table class="goj-table">
+            <tbody class="goj-table__body">
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell goj-table__first-row goj-table--equal-width">Paid weekly</td>
+                    <td class="goj-table__cell goj-table--equal-width">£128</td>
+                </tr>
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell goj-table__first-row goj-table--equal-width">Paid every 2 weeks</td>
+                    <td class="goj-table__cell goj-table--equal-width">£256</td>
+                </tr>
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell goj-table__first-row goj-table--equal-width">Paid every 4 weeks</td>
+                    <td class="goj-table__cell goj-table--equal-width">£512</td>
+                </tr>
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell goj-table__first-row goj-table--equal-width">Paid monthly</td>
+                    <td class="goj-table__cell goj-table--equal-width">£556</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="subtitle">Striped</p>
+        <table class="goj-table goj-table--striped">
+            <thead class="goj-table__header">
+                <tr class="goj-table__row">
+                    <th class="goj-table__header-cell">Name</th>
+                    <th class="goj-table__header-cell">Occupation</th>
+                </tr>
+            </thead>
+            <tbody class="goj-table__body">
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell">John Doe</td>
+                    <td class="goj-table__cell">Software Engineer</td>
+                </tr>
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell">Jane Smith</td>
+                    <td class="goj-table__cell">Graphic Designer</td>
+                </tr>
+                <tr class="goj-table__row">
+                    <td class="goj-table__cell">Sam Johnson</td>
+                    <td class="goj-table__cell">Project Manager</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h1 class="title">Footer</h1>
+    <footer class="goj-footer">
+        <div class="goj-footer__container">
+            <div class="goj-footer__social-links">
+                <a href="#" class="goj-footer__social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="goj-footer__social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="goj-footer__social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="goj-footer__social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="goj-footer__social-link"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="goj-footer__links">
+                <a href="#" class="goj-footer__link">Accessibility</a>
+                <a href="#" class="goj-footer__link">Contact us</a>
+                <a href="#" class="goj-footer__link">Privacy</a>
+                <a href="#" class="goj-footer__link">Terms & Conditions</a>
+                <a href="#" class="goj-footer__link">Sitemap</a>
+                <a href="#" class="goj-footer__link">Translate</a>
+                <div class="goj-footer__copyright">&copy; Government of Jersey</div>
+            </div>
+        </div>
+    </footer>
+
+    <h1 class="title">Loading spinner</h1>
+
+    <div style="width: 350px">
+        <div class="goj-loading-spinner">
+            <div class="goj-loading-spinner__spinner"></div>
+            <div class="goj-loading-spinner__text">
+                Loading...
+            </div>
+        </div>
+
+        <p class="subtitle">Inverse</p>
+        <div class="inverse">
+            <div class="goj-loading-spinner goj-loading-spinner--inverse">
+                <div class="goj-loading-spinner__spinner"></div>
+                <div class="goj-loading-spinner__text">
+                    Loading...
+                </div>
+            </div>
+        </div>
+
+        <div class="inverse inverse-blue">
+            <div class="goj-loading-spinner goj-loading-spinner--inverse">
+                <div class="goj-loading-spinner__spinner"></div>
+                <div class="goj-loading-spinner__text">
+                    Loading some things...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="title">Alerts</h1>
+    <div style="max-width: 700px">
+        <div class="goj-alert goj-alert--danger">
+            If a child is in immediate danger, you should call 999.
+        </div>
+        <br>
+        <div class="goj-alert goj-alert--warning">
+            Please make sure you read this section carefully or you could be fined!
+        </div>
+        <br>
+        <div class="goj-alert goj-alert--info">
+            Due to Coronavirus, you cannot visit the Register Office in person. All non-essential face to face
+            registration and ceremonial services have been suspended until further notice.
+        </div>
+        <br>
+        <div class="goj-alert goj-alert--success">
+            Thank you for completing the online adult social care referral from. We will be in touch within 48 hours
+            about your needs.
+        </div>
+    </div>
+
+    <h1 class="title">Inset text</h1>
+    <div class="goj-inset-text">
+        It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.
+    </div>
+
+    <p class="subtitle">Wrapping</p>
+    <div class="goj-inset-text" style="max-width: 600px">
+        It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.
+    </div>
+
+    <h1 class="title">Breadcrumbs</h1>
+    <ul class="goj-breadcrumbs">
+        <li class="goj-breadcrumbs__item">
+            <a href="#" class="goj-breadcrumbs__link">Home</a>
+        </li>
+        <li class="goj-breadcrumbs__item">
+            <a href="#" class="goj-breadcrumbs__link">Passports, travel and living abroad</a>
+        </li>
+        <li class="goj-breadcrumbs__item">
+            <a href="#" class="goj-breadcrumbs__link">Travel abroad</a>
+        </li>
+    </ul>
+
+    <p class="subtitle">Inverse</p>
+    <div class="inverse inverse-bluke">
+        <ul class="goj-breadcrumbs goj-breadcrumbs--inverse">
+            <li class="goj-breadcrumbs__item">
+                <a href="#" class="goj-breadcrumbs__link">Home</a>
+            </li>
+            <li class="goj-breadcrumbs__item">
+                <a href="#" class="goj-breadcrumbs__link">Passports, travel and living abroad</a>
+            </li>
+            <li class="goj-breadcrumbs__item">
+                <a href="#" class="goj-breadcrumbs__link">Travel abroad</a>
+            </li>
+        </ul>
+    </div>
+
+    <p class="subtitle">Wrapping</p>
+    <div style="max-width: 500px">
+        <ul class="goj-breadcrumbs">
+            <li class="goj-breadcrumbs__item">
+                <a href="#" class="goj-breadcrumbs__link">Home</a>
+            </li>
+            <li class="goj-breadcrumbs__item">
+                <a href="#" class="goj-breadcrumbs__link">Passports, travel and living abroad</a>
+            </li>
+            <li class="goj-breadcrumbs__item">
+                <a href="#" class="goj-breadcrumbs__link">Travel abroad</a>
+            </li>
+            <li class="goj-breadcrumbs__item">
+                <a href="#" class="goj-breadcrumbs__link">Another item</a>
+            </li>
+            <li class="goj-breadcrumbs__item">
+                <a href="#" class="goj-breadcrumbs__link">And another item</a>
+            </li>
+        </ul>
+    </div>
+
+    <h1 class="title">Header</h1>
+    <header class="goj-header">
+        <div class="goj-header__container">
+            <a href="https://www.gov.je" title="gov.je home" class="goj-header__logo">
+                <img id="M_Image2" src="https://cdn.gov.je/govje/images/Gov-Jersey-Crest.svg" alt="gov.je" />
+                gov.je
+            </a>
+        </div>
+    </header>
+
+    <p class="subtitle">Navigation items</p>
+    <header class="goj-header">
+        <div class="goj-header__container">
+            <a href="https://www.gov.je" title="gov.je home" class="goj-header__logo">
+                <img id="M_Image2" src="https://cdn.gov.je/govje/images/Gov-Jersey-Crest.svg" alt="gov.je" />
+                gov.je
+            </a>
+            <div class="goj-header__actions">
+                <div class="goj-input-wrapper goj-full-width">
+                    <input type="text" class="goj-input goj-header__search" placeholder="Search gov.je" />
+                    <button class="goj-input__suffix goj-header__search-icon"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="goj-header__navigation-wrapper">
+        <div class="goj-header__container goj-flex goj-flex__space-between">
+            <div class="goj-header__navigation">
+                <a href="#" class="goj-header__navigation-item">Home</a>
+                <a href="#" class="goj-header__navigation-item">Reports</a>
+                <a href="#" class="goj-header__navigation-item">Add report</a>
+                <a href="#" class="goj-header__navigation-item">Live map</a>
+                <a href="#" class="goj-header__navigation-item">How it works</a>
+            </div>
+            <div class="goj-header__navigation">
+                <a href="#" class="goj-header__navigation-item">Log in</a>
+                <a href="#" class="goj-header__navigation-item">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <p class="subtitle">Search</p>
+    <header class="goj-header">
+        <div class="goj-header__container">
+            <a href="https://www.gov.je" title="gov.je home" class="goj-header__logo">
+                <img id="M_Image2" src="https://cdn.gov.je/govje/images/Gov-Jersey-Crest.svg" alt="gov.je" />
+                gov.je
+            </a>
+            <div class="goj-header__actions">
+                <div class="goj-input-wrapper goj-full-width">
+                    <input type="text" class="goj-input goj-header__search" placeholder="Search gov.je" />
+                    <button class="goj-input__suffix goj-header__search-icon"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <p class="subtitle">Love Jersey</p>
+    <header class="goj-header" style="background-color: #2B837C">
+        <div class="goj-header__container">
+            <a href="https://www.gov.je" title="gov.je home" class="goj-header__logo">
+                <img id="M_Image2" src="https://cdn.gov.je/govje/images/Gov-Jersey-Crest.svg" alt="gov.je" />
+                Love Jersey
+            </a>
+            <!-- <div class="goj-header__actions">
+                <div class="goj-input-wrapper">
+                    <input type="text" class="goj-input goj-header__search" placeholder="Search reports" />
+                    <button class="goj-input__suffix goj-header__search-icon"></button>
+                </div>
+            </div> -->
+        </div>
+    </header>
+    <div class="goj-header__navigation-wrapper">
+        <div class="goj-header__container goj-flex goj-flex__space-between">
+            <div class="goj-header__navigation lovejersey">
+                <a href="#" class="goj-header__navigation-item">Home</a>
+                <a href="#" class="goj-header__navigation-item">Reports</a>
+                <a href="#" class="goj-header__navigation-item">Add report</a>
+                <a href="#" class="goj-header__navigation-item">Live map</a>
+                <a href="#" class="goj-header__navigation-item">How it works</a>
+            </div>
+            <div class="goj-header__navigation lovejersey">
+                <a href="#" class="goj-header__navigation-item">Log in</a>
+                <a href="#" class="goj-header__navigation-item">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="title">Description list</h1>
+    <div style="max-width: 700px">
+        <div class="goj-data-list">
+            <div class="goj-data-list__row">
+                <p class="goj-data-list__key">Registration number</p>
+                <p class="goj-data-list__value">J1</p>
+            </div>
+            <div class="goj-data-list__row">
+                <p class="goj-data-list__key">Make</p>
+                <p class="goj-data-list__value">ROLLS ROYCE</p>
+            </div>
+            <div class="goj-data-list__row">
+                <p class="goj-data-list__key">Type</p>
+                <p class="goj-data-list__value">Convertible</p>
+            </div>
+            <div class="goj-data-list__row">
+                <p class="goj-data-list__key">Colour</p>
+                <p class="goj-data-list__value">Silver</p>
+            </div>
+            <div class="goj-data-list__row">
+                <p class="goj-data-list__key">Cylinder capacity</p>
+                <p class="goj-data-list__value">6181 (cc)</p>
+            </div>
+            <div class="goj-data-list__row">
+                <p class="goj-data-list__key">Weight</p>
+                <p class="goj-data-list__value">Not known</p>
+            </div>
+            <div class="goj-data-list__row">
+                <p class="goj-data-list__key">CO₂ emissions</p>
+                <p class="goj-data-list__value">Not known</p>
+            </div>
+            <div class="goj-data-list__row">
+                <p class="goj-data-list__key">Fuel type</p>
+                <p class="goj-data-list__value">Petrol</p>
+            </div>
+            <div class="goj-data-list__row">
+                <p class="goj-data-list__key">Date of first registration</p>
+                <p class="goj-data-list__value">01 February 1921</p>
+            </div>
+            <div class="goj-data-list__row">
+                <p class="goj-data-list__key">Date registered in Jersey</p>
+                <p class="goj-data-list__value">25 May 2001</p>
+            </div>
+            <div class="goj-data-list__row">
+                <p class="goj-data-list__key">Number of previous owners</p>
+                <p class="goj-data-list__value">0</p>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="title">Inputs</h1>
+
+    <div style="max-width: 600px">
+        <div class="goj-form-group">
+            <h1 class="goj-label-wrapper">
+                <label class="goj-label goj-label--l">
+                    What is the vehicle registration?
+                </label>
+            </h1>
+            <input class="goj-input" type="text" />
+        </div>
+
+        <p class="subtitle">Small label</p>
+        <div class="goj-form-group">
+            <label class="goj-label">
+                What is the vehicle registration?
+            </label>
+            <input class="goj-input" type="text" />
+        </div>
+
+        <p class="subtitle">Big label with hint</p>
+        <div class="goj-form-group">
+            <h1 class="goj-label-wrapper">
+                <label class="goj-label goj-label--l">
+                    What is the vehicle registration?
+                </label>
+            </h1>
+            <div class="goj-hint">
+                The name you’ll use on promotional material
+            </div>
+            <input class="goj-input" type="text" />
+        </div>
+
+        <p class="subtitle">Small label with hint</p>
+        <div class="goj-form-group">
+            <label class="goj-label">
+                What is the vehicle registration?
+            </label>
+            <span class="goj-hint">
+                The name you’ll use on promotional material
+            </span>
+            <input class="goj-input" type="text" />
+        </div>
+
+        <p class="subtitle">Prefix & Suffix</p>
+        <div class="goj-form-group" style="width: 100px">
+            <label class="goj-label">
+                Weight
+            </label>
+            <div class="goj-input-wrapper">
+                <input class="goj-input" type="text" />
+                <div class="goj-input__suffix">kg</div>
+            </div>
+        </div>
+
+        <div class="goj-form-group" style="width: 100px">
+            <label class="goj-label">
+                Price
+            </label>
+            <div class="goj-input-wrapper">
+                <div class="goj-input__prefix">£</div>
+                <input class="goj-input" type="text" />
+            </div>
+        </div>
+
+        <p class="subtitle">Error</p>
+        <div class="goj-form-group goj-form-group--error">
+            <label class="goj-label goj-label">
+                What is the vehicle registration?
+            </label>
+            <span class="goj-hint">
+                The name you’ll use on promotional material
+            </span>
+            <input class="goj-input goj-input--error" type="text" />
+            <div class="goj-form-group__error-message">
+                The vehicle registration entered is invalid
+            </div>
+        </div>
+        <br>
+        <div class="goj-form-group goj-form-group--error">
+            <label class="goj-label goj-label">
+                What is the vehicle registration?
+            </label>
+            <input class="goj-input goj-input--error" type="text" />
+            <div class="goj-form-group__error-message">
+                The vehicle registration entered is invalid
+            </div>
+        </div>
+        <br>
+        <div class="goj-form-group goj-form-group--error">
+            <label class="goj-label goj-label--l">
+                What is the vehicle registration?
+            </label>
+            <span class="goj-hint">
+                The name you’ll use on promotional material
+            </span>
+            <input class="goj-input goj-input--error" type="text" />
+            <div class="goj-form-group__error-message">
+                The vehicle registration entered is invalid
+            </div>
+        </div>
+    </div>
+
+    <h1 class="title">Checkboxes</h1>
+    <div class="goj-form-group">
+        <label class="goj-label">
+            What department do you need?
+        </label>
+        <span class="goj-hint">
+            Select all that apply
+        </span>
+        <div class="goj-checkboxes">
+            <div class="goj-checkboxes__item">
+                <input id="test" class="goj-checkboxes__input" type="checkbox" value="yes">
+                <label for="test" class="goj-checkboxes__label">HM Revenue and Customs (HMRC)</label>
+            </div>
+            <div class="goj-checkboxes__item">
+                <input class="goj-checkboxes__input" type="checkbox" value="yes">
+                <label class="goj-checkboxes__label">Employment Tribunal</label>
+            </div>
+            <div class="goj-checkboxes__item">
+                <input class="goj-checkboxes__input" type="checkbox" value="yes">
+                <label class="goj-checkboxes__label">Ministry of Defence</label>
+            </div>
+        </div>
+    </div>
+
+    <p class="subtitle">Large</p>
+    <div class="goj-form-group">
+        <label class="goj-label goj-label--l">
+            What department do you need?
+        </label>
+        <span class="goj-hint">
+            Select all that apply
+        </span>
+        <div class="goj-checkboxes goj-checkboxes--large">
+            <div class="goj-checkboxes__item">
+                <input id="test" class="goj-checkboxes__input" type="checkbox" value="yes">
+                <label for="test" class="goj-checkboxes__label">HM Revenue and Customs (HMRC)</label>
+            </div>
+            <div class="goj-checkboxes__item">
+                <input class="goj-checkboxes__input" type="checkbox" value="yes">
+                <label class="goj-checkboxes__label">Employment Tribunal</label>
+            </div>
+            <div class="goj-checkboxes__item">
+                <input class="goj-checkboxes__input" type="checkbox" value="yes">
+                <label class="goj-checkboxes__label">Ministry of Defence</label>
+            </div>
+        </div>
+    </div>
+
+    <p class="subtitle">Error</p>
+    <div class="goj-form-group goj-form-group--error">
+        <label class="goj-label">
+            What department do you need?
+        </label>
+        <span class="goj-hint">
+            Select all that apply
+        </span>
+        <div class="goj-checkboxes">
+            <div class="goj-checkboxes__item">
+                <input id="test" class="goj-checkboxes__input" type="checkbox" value="yes">
+                <label for="test" class="goj-checkboxes__label">HM Revenue and Customs (HMRC)</label>
+            </div>
+            <div class="goj-checkboxes__item">
+                <input class="goj-checkboxes__input" type="checkbox" value="yes">
+                <label class="goj-checkboxes__label">Employment Tribunal</label>
+            </div>
+            <div class="goj-checkboxes__item">
+                <input class="goj-checkboxes__input" type="checkbox" value="yes">
+                <label class="goj-checkboxes__label">Ministry of Defence</label>
+            </div>
+        </div>
+        <div class="goj-form-group__error-message">
+            Invalid selection
+        </div>
+    </div>
+
+    <h1 class="title">Buttons</h1>
+
+    <button class="goj-button">Default</button>
+    <button class="goj-button goj-button--primary">Primary</button>
+    <button class="goj-button goj-button--secondary">Secondary</button>
+
+    <p class="subtitle">Disabled</p>
+    <button class="goj-button" disabled>Disabled</button>
+    <button class="goj-button goj-button--primary" disabled>Disabled</button>
+    <button class="goj-button goj-button--secondary" disabled>Disabled</button>
+    <button class="goj-button goj-button--primary goj-button--start" disabled>Disabled</button>
+    <button class="goj-button goj-button--secondary goj-button--external-link" disabled>Disabled</button>
+
+    <p class="subtitle">Internal Links</p>
+    <a href="#" class="goj-button">Default</a>
+    <a href="#" class="goj-button goj-button--primary">Primary</a>
+    <a href="#" class="goj-button goj-button--primary goj-button--start">Start now</a>
+
+    <p class="subtitle">External Links</p>
+    <a href="#" class="goj-button goj-button--external-link">Apply now on external site</a>
+
+    <p class="subtitle">Inverse</p>
+    <div class="inverse">
+        <button class="goj-button goj-button--inverse">Test button</button>
+        <a href="#" class="goj-button goj-button--inverse goj-button--start">Start now</a>
+        <button class="goj-button goj-button--inverse" disabled>Disabled</button>
+        <button class="goj-button goj-button--inverse goj-button--external-link" disabled>Disabled</button>
+    </div>
+    <br>
+    <div class="inverse inverse-blue">
+        <button class="goj-button goj-button--inverse">Test button</button>
+        <a href="#" class="goj-button goj-button--inverse goj-button--start">Start now</a>
+        <button class="goj-button goj-button--inverse" disabled>Disabled</button>
+        <button class="goj-button goj-button--inverse goj-button--external-link" disabled>Disabled</button>
+    </div>
+
+    <h1 class="title">Links</h1>
+    <a href="#" class="goj-link">An example link</a>
+    <br>
+    <a href="#" class="goj-link goj-link--no-underline">An example link without underline</a>
+    <br>
+    <a href="#" class="goj-link goj-link--charcoal">Charcoal link</a>
+    <br>
+    <a href="#" class="goj-link goj-link--charcoal goj-link--no-underline goj-button--external-link">Charcoal link
+        without underline</a>
+    <br>
+    <div class="inverse">
+        <a href="#" class="goj-link goj-link--inverse">Inverse link</a>
+    </div>
+</body>
+
+</html>

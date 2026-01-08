@@ -1,0 +1,7 @@
+.goj-inset-text {
+    border-left: 5px solid goj-color("muted");
+    padding: 16px;
+    font-size: 18px;
+    background-color: rgba(goj-color("muted"), 0.1);
+    width: fit-content;
+}

@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "rootDir": "src",
+        "declaration": true,
+        "declarationMap": true,
+        "module": "ESNext",
+        "target": "ES2016",
+        "jsx": "react-jsx",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "strict": true
+    },
+    "include": [
+        "src"
+    ]
+}

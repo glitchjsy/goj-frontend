@@ -1,0 +1,22 @@
+.sidebarPageLayout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.menuButton {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menuButton {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .sidebarPageLayout {
+        grid-template-columns: 1fr;
+    }
+}

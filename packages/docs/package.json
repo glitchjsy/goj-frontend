@@ -1,0 +1,29 @@
+{
+  "name": "@goj-frontend/docs",
+  "author": "Luke <luke@glitch.je>",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@goj-frontend/react": "file:../react/goj-frontend-react-1.0.0.tgz",
+    "next": "16.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-syntax-highlighter": "^16.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.5",
+    "typescript": "^5"
+  }
+}

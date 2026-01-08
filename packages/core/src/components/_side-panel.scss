@@ -1,0 +1,34 @@
+.goj-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.goj-side-panel {
+    background-color: #eef0f0;
+    padding: 20px 20px;
+}
+
+.goj-side-panel__title {
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    color: goj-color("red");
+}
+
+.goj-side-panel__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.goj-side-panel__contact-item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.goj-side-panel__contact-item > i {
+    color: goj-color("red");
+    margin-right: 5px;
+}

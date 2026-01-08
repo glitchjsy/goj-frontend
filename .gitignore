@@ -1,0 +1,8 @@
+.idea/
+.vs/
+.vscode/
+dist/
+node_modules/
+package-lock.json
+packages/core/css/all.css
+.DS_Store

@@ -1,0 +1,126 @@
+@use "sass:color";
+
+// Colours
+$goj-default-button-color: goj-color("red");
+$goj-default-button-color-hover: color.scale($goj-default-button-color, $lightness: -20%);
+
+$goj-primary-button-color: goj-color("green");
+$goj-primary-button-color-hover: color.scale($goj-primary-button-color, $lightness: -20%);
+
+$goj-secondary-button-color: goj-color("blue");
+$goj-secondary-button-color-hover: color.scale($goj-secondary-button-color, $lightness: -20%);
+
+$goj-inverse-button-color: goj-color("white");
+$goj-inverse-button-color-hover: color.scale($goj-inverse-button-color, $lightness: -20%);
+
+.goj-button {
+    display: inline-block;
+    height: 38px;
+    background-color: $goj-default-button-color;
+    color: goj-color("white");
+    padding: 0 15px;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    border-bottom: 2px solid goj-color("dark-gray");
+    font-size: 19px;
+    font-weight: 600;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+    touch-action: manipulation;
+    user-select: none;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $goj-default-button-color-hover;
+        border-bottom: none;
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: 2px solid goj-color("focus");
+    }
+
+    &:disabled {
+        opacity: 0.5;
+
+        &:hover {
+            background-color: $goj-default-button-color;
+            border-bottom: 2px solid goj-color("dark-gray");
+            cursor: not-allowed;
+        }
+    }
+}
+
+a.goj-button {
+    display: inline-flex;
+    align-items: center;
+}
+
+.goj-button--primary {
+    background-color: $goj-primary-button-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $goj-primary-button-color-hover;
+    }
+
+    &:hover[disabled] {
+        background-color: $goj-primary-button-color;
+    }
+}
+
+.goj-button--secondary {
+    background-color: $goj-secondary-button-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $goj-secondary-button-color-hover;
+    }
+
+    &:hover[disabled] {
+        background-color: $goj-secondary-button-color;
+    }
+}
+
+.goj-button--inverse {
+    background-color: $goj-inverse-button-color;
+    color: goj-color("black");
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $goj-inverse-button-color-hover;
+    }
+
+    &:hover[disabled] {
+        background-color: $goj-inverse-button-color;
+    }
+}
+
+.goj-button--start {
+    &:after {
+        content: "\f054";
+        font-family: FontAwesome;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+.goj-button--external-link {
+    &:after {
+        content: "\f08e";
+        font-family: FontAwesome;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+.goj-button--slim {
+    font-size: 16px;
+    height: 32px;
+}

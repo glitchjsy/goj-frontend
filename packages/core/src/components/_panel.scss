@@ -1,0 +1,40 @@
+$goj-panel-bg-color: #e5e9e9;
+$goj-panel-title-height: 20px;
+
+.goj-panel {
+    background-color: $goj-panel-bg-color;
+    position: relative;
+    margin-top: $goj-panel-title-height + 10px;
+}
+
+.goj-panel__title {
+    background-color: goj-color("red");
+    padding: 5px 50px 5px 15px;
+    margin: 0;
+    top: -$goj-panel-title-height;
+    line-height: 1.33333;
+    font-size: 24px;
+    color: goj-color("white");
+    position: absolute;
+    display: inline-block;
+}
+
+.goj-panel__content {
+    padding: 20px 50px 5px 30px;
+}
+
+.goj-panel--charcoal {
+    .goj-panel__title {
+        background-color: goj-color("charcoal");
+    }
+}
+
+.goj-panel--success {
+    .goj-panel__title {
+        background-color: goj-color("green");
+    }
+}
+
+.goj-panel--danger {
+    background-color: mix(goj-color("white"), goj-color("light-red"), 82%);
+}

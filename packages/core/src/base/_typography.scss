@@ -1,0 +1,82 @@
+$goj-font-family: Arial, Helvetica, sans-serif;
+
+* {
+    font-family: $goj-font-family;
+}
+
+.goj-p {
+    font-size: 18px;
+}
+
+.goj-bold {
+    font-weight: bold;
+}
+
+.goj-label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 13px;
+    cursor: text;
+}
+
+.goj-label-wrapper {
+    margin: 0;
+}
+
+.goj-hint {
+    color: goj-color("muted");
+    font-size: 14px;
+    display: block;
+}
+
+.goj-label + .goj-hint {
+    margin-top: -5px; // removes extra spacing when hint inserted
+    margin-bottom: 10px;
+}
+
+.goj-heading {
+
+}
+
+.goj-heading--medium,
+.goj-heading--large,
+.goj-heading--xlarge {
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+
+.goj-heading--small {
+    font-size: 22px;
+}
+
+.goj-heading--medium {
+    font-size: 28px;
+}
+
+.goj-heading--large {
+    font-size: 36px;
+}
+
+.goj-heading--xlarge {
+    font-size: 46px;
+}
+
+@media screen and (max-width: 768px) {
+    .goj-heading--small {
+        font-size: 18px;
+    }
+
+    .goj-heading--medium {
+        font-size: 22px;
+    }
+
+    .goj-heading--large {
+        font-size: 26px;
+    }
+
+    .goj-heading--xlarge {
+        font-size: 32px
+    }
+}

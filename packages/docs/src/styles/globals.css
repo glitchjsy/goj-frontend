@@ -1,0 +1,13 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.goj-header__navigation-item:hover {
+    color: #104fbb !important;
+}
+
+* {
+    font-family: Arial, sans-serif;
+}

@@ -1,0 +1,35 @@
+.goj-breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 5px;
+    list-style: none;
+    padding-left: 0;
+
+     &--inverse {
+        .goj-breadcrumbs__item {
+            &:not(:last-child)::after {
+                color: goj-color("white");
+            }
+        }
+
+        .goj-breadcrumbs__link {
+            @extend .goj-link--inverse;
+        }
+    }
+}
+    
+.goj-breadcrumbs__item {
+    &:not(:last-child)::after {
+        content: "\f054";
+        font-family: FontAwesome;
+        font-size: 12px;
+        padding-left: 10px;
+        color: goj-color("dark-gray");
+    }
+}
+
+.goj-breadcrumbs__link {
+    @extend .goj-link;
+    @extend .goj-link--charcoal;
+}

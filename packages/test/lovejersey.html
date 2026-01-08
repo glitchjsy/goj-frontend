@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="/GovJE.min.css">
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .goj-header {
+            background-color: #2B837C;
+        }
+
+        .goj-header__navigation-item:hover {
+            color: #2B837C;
+            text-decoration-color: #2B837C;
+        }
+
+        .goj-footer__social-link:hover {
+            background-color: rgb(43, 131, 124, 0.7);
+        }
+    </style>
+</head>
+
+<body class="no-js">
+    <header class="goj-header">
+        <div class="goj-header__container">
+            <a href="https://www.gov.je" title="gov.je home" class="goj-header__logo">
+                <img id="M_Image2" src="https://cdn.gov.je/govje/images/Gov-Jersey-Crest.svg" alt="gov.je" />
+                Love Jersey
+            </a>
+            <!-- <div class="goj-header__actions">
+                <div class="goj-input-wrapper">
+                    <input type="text" class="goj-input goj-header__search" placeholder="Search reports" />
+                    <button class="goj-input__suffix goj-header__search-icon"></button>
+                </div>
+            </div> -->
+        </div>
+    </header>
+    <div class="goj-header__navigation-wrapper goj-header--enable-mobile-navigation">
+        <button class="goj-header__menu-button" aria-label="Toggle menu">
+            Menu
+        </button>
+        <div class="goj-header__container goj-flex goj-flex__space-between">
+            <div class="goj-header__navigation lovejersey">
+                <a href="#" class="goj-header__navigation-item">Home</a>
+                <a href="#" class="goj-header__navigation-item">Reports</a>
+                <a href="#" class="goj-header__navigation-item">Add report</a>
+                <a href="#" class="goj-header__navigation-item">Live map</a>
+                <a href="#" class="goj-header__navigation-item">How it works</a>
+            </div>
+            <div class="goj-header__navigation lovejersey">
+                <a href="#" class="goj-header__navigation-item">Log in</a>
+                <a href="#" class="goj-header__navigation-item">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="goj-container">
+        <div class="goj-row">
+            <div class="goj-col goj-col--full goj-col--lg-two-thirds">
+                <h1 class="goj-heading goj-heading--large" style="margin-bottom: 20px">Show us how much you Love Jersey
+                </h1>
+                <p class="goj-p">
+                    We live on a beautiful island and all need to do our part to keep it that way. Whether you notice a
+                    hole in the road, something that needs to be cleaned or repaired, or spot a rare species of animal
+                    that we should know about, Love Jersey is the place to report it.
+                </p>
+                <p class="goj-p">
+                    Use your computer, tablet or smartphone to map your location, add a photo and tell us what needs
+                    attention.
+                </p>
+                <p class="goj-p">
+                    We'll take care of the rest and make sure the relevant person or team is notified.
+                </p>
+                <p class="goj-p">
+                    You don't even have to do it there and then. Take a picture and tell us about the problem later on,
+                    but the sooner you tell us the quicker we can fix it. You can track our progress by looking back at
+                    your report for updates or to add new information.
+                </p>
+                <p class="goj-p">
+                    Your reports may be published on the View Reports section of this website so that others can see
+                    what has already been reported, which helps avoid duplication. We will only publish the photo and
+                    description of your report and you will remain anonymous.
+                </p>
+            </div>
+            <div class="goj-col goj-col--full goj-col--lg-one-third">
+                <div style="background:#eef0f0;padding:5px 20px;margin-top:32px">
+                    <h2 class="goj-p" style="font-size:22px">Contact details</h2>
+                    <p class="goj-p">
+                        Email: hello@gov.je<br>
+                        Phone: 07727870962<br>
+                        Website: google.com<br><br>
+                        Please get in touch via the above or send us a message on social media
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <footer class="goj-footer">
+        <div class="goj-footer__container">
+            <div class="goj-footer__social-links">
+                <a href="#" class="goj-footer__social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="goj-footer__social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="goj-footer__social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="goj-footer__social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="goj-footer__social-link"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="goj-footer__links">
+                <a href="#" class="goj-footer__link">Accessibility</a>
+                <a href="#" class="goj-footer__link">Contact us</a>
+                <a href="#" class="goj-footer__link">Privacy</a>
+                <a href="#" class="goj-footer__link">Terms & Conditions</a>
+                <a href="#" class="goj-footer__link">Sitemap</a>
+                <a href="#" class="goj-footer__link">Translate</a>
+                <div class="goj-footer__copyright">&copy; Government of Jersey</div>
+            </div>
+        </div>
+    </footer>
+
+      <script>
+        document.documentElement.classList.add("goj-js-enabled");
+
+        const menuButton = document.querySelector(".goj-header__menu-button");
+        const navWrapper = document.querySelector(".goj-header__navigation-wrapper");
+
+        if (menuButton && navWrapper) {
+            menuButton.addEventListener("click", () => {
+                navWrapper.classList.toggle("goj-header--mobile-navigation-open");
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+$goj-default-link-color: goj-color("red");
+
+.goj-link {
+    color: $goj-default-link-color;
+    text-decoration: underline;
+    text-underline-offset: 2.5px;
+    text-decoration-skip: none;
+    text-decoration-skip-ink: none;
+
+    &:hover {
+        color: goj-color("charcoal");
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+
+    &:focus {
+        background-color: goj-color("focus");
+        color: goj-color("charcoal");
+        outline: none;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+}
+
+.goj-link--charcoal {
+    color: goj-color("charcoal");
+
+    &:hover {
+        color: goj-color("red");
+    }
+
+    &:focus {
+        color: goj-color("charcoal");
+    }
+}
+
+.goj-link--no-underline {
+    text-decoration: none;
+}
+
+.goj-link--inverse {
+    color: goj-color("white");
+
+    &:hover {
+        color: goj-color("white");
+    }
+
+    &:focus {
+        color: goj-color("charcoal");
+    }
+}

@@ -1,0 +1,51 @@
+$goj-input-height: 36px;
+
+.goj-input {
+    height: $goj-input-height;
+    width: 100%;
+    padding: 0 10px;
+    border: 1px solid goj-color("input-border");
+    color: goj-color("charcoal");
+    font-size: 18px;
+    line-height: 35px;
+    overflow-wrap: normal;
+
+    &:focus {
+        outline: none;
+        box-shadow: inset 0 0 0 1.5px;
+        border-color: goj-color("charcoal");
+        outline: 2.5px solid goj-color("focus");
+    }
+}
+
+.goj-input-wrapper {
+    display: flex;
+}
+
+.goj-input__prefix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    height: $goj-input-height;
+    width: $goj-input-height;
+    border: 1.5px solid goj-color("input-border");
+    border-right: none;
+    background-color: goj-color("light-gray");
+}
+
+.goj-input__suffix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    height: $goj-input-height;
+    width: $goj-input-height;
+    border: 1.5px solid goj-color("input-border");
+    border-left: none;
+    background-color: goj-color("light-gray");
+}
+
+.goj-input--error {
+    border-color: goj-color("light-red");
+}

@@ -1,0 +1,27 @@
+{
+    "name": "@goj-frontend/core",
+    "description": "Government of Jersey web design toolkit",
+    "version": "1.0.0",
+    "author": "Luke <luke@glitch.je>",
+    "license": "MIT",
+    "keywords": [
+        "govje",
+        "ui",
+        "css",
+        "jersey"
+    ],
+    "scripts": {
+        "build": "gulp"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^5.0.0",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-cli": "^2.3.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^5.1.0",
+        "gulp-watch": "^5.0.1",
+        "sass": "^1.69.5"
+    }
+}

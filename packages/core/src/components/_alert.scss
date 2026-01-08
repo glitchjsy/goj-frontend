@@ -1,0 +1,53 @@
+.goj-alert {
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding: 15px 40px;
+    width: fit-content;
+    position: relative;
+
+    &:before {
+        font-family: FontAwesome;
+        position: absolute;
+        left: 15px;
+    }
+}
+
+.goj-alert--info {
+    border-color: goj-color("blue");
+    color: goj-color("blue");
+    background-color: mix(goj-color("white"), goj-color("blue"), 95%);
+
+    &:before {
+        content: "\f05a";
+    }
+}
+
+.goj-alert--danger {
+    border-color: goj-color("light-red");
+    color: goj-color("light-red");
+    background-color: mix(goj-color("white"), goj-color("light-red"), 95%);
+
+    &:before {
+        content: "\f06a";
+    }
+}
+
+.goj-alert--warning {
+    border-color: goj-color("orange");
+    color: goj-color("orange");
+    background-color: mix(goj-color("white"), goj-color("orange"), 95%);
+
+    &:before {
+        content: "\f071";
+    }
+}
+
+.goj-alert--success {
+    border-color: goj-color("green");
+    color: goj-color("green");
+    background-color: mix(goj-color("white"), goj-color("green"), 95%);
+
+    &:before {
+        content: "\f00c";
+    }
+}

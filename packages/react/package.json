@@ -1,0 +1,22 @@
+{
+    "name": "@goj-frontend/react",
+    "description": "Government of Jersey web design toolkit, React library",
+    "version": "1.0.0",
+    "author": "Luke <luke@glitch.je>",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "npx tsc -p tsconfig.build.json",
+        "install-legacy": "npm install --legacy-peer-deps"
+    },
+    "dependencies": {
+        "clsx": "^2.1.1"
+    },
+    "devDependencies": {
+        "@types/react": "18.2.0",
+        "@types/react-dom": "18.2.0",
+        "tsdown": "^0.16.0",
+        "typescript": "^5.2.2"
+    }
+}
